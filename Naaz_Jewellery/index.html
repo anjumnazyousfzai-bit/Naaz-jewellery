@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Discover timeless jewellery at Naaz Jewellery. Explore elegant necklaces, rings, earrings and bridal collections.">
+  <title>Naaz Jewellery | Elegance That Lasts</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="announcement text-center">A little sparkle for every moment · Discover your new favourite</div>
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container py-2">
+      <a class="navbar-brand" href="#home"><span class="brand-mark">N</span><span>Naaz <small>JEWELLERY</small></span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="mainNav">
+        <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#collections">Collections</a></li>
+          <li class="nav-item"><a class="nav-link" href="#shop">Shop</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">Our Story</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-actions d-flex align-items-center gap-3">
+          <button class="icon-btn" id="searchToggle" aria-label="Show search"><i class="bi bi-search"></i></button>
+          <button class="icon-btn position-relative" id="wishlistNav" aria-label="Wishlist"><i class="bi bi-heart"></i><span class="tiny-count" id="wishCount">0</span></button>
+          <button class="icon-btn position-relative" id="cartToggle" aria-label="Shopping cart"><i class="bi bi-bag"></i><span class="tiny-count" id="cartCount">0</span></button>
+        </div>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-shade"></div>
+      <div class="container hero-content">
+        <p class="eyebrow text-gold">THE ART OF EVERYDAY LUXURY</p>
+        <h1>Jewellery that<br><em>feels like you.</em></h1>
+        <p class="hero-copy">Thoughtfully chosen pieces. Timeless beauty.<br class="d-none d-md-block"> A little sparkle for all your special moments.</p>
+        <a class="btn btn-gold" href="#shop">Shop the collection <i class="bi bi-arrow-up-right ms-2"></i></a>
+      </div>
+      <div class="hero-note"><span>01</span> / TIMELESS COLLECTION</div>
+    </section>
+
+    <section class="benefits container py-4">
+      <div class="row g-3 text-center">
+        <div class="col-6 col-lg-3 benefit"><i class="bi bi-gem"></i><span>Thoughtful designs</span></div>
+        <div class="col-6 col-lg-3 benefit"><i class="bi bi-box-seam"></i><span>Gift-ready packaging</span></div>
+        <div class="col-6 col-lg-3 benefit"><i class="bi bi-shield-check"></i><span>Secure checkout*</span></div>
+        <div class="col-6 col-lg-3 benefit"><i class="bi bi-chat-heart"></i><span>Personal service</span></div>
+      </div>
+      <p class="small text-muted text-center mt-2 mb-0">*Demo website: no real payment processing is connected.</p>
+    </section>
+
+    <section class="section-pad" id="collections">
+      <div class="container">
+        <div class="section-heading text-center">
+          <p class="eyebrow">FIND YOUR SIGNATURE</p>
+          <h2>Made for your <em>moments</em></h2>
+          <p>From everyday essentials to unforgettable celebrations.</p>
+        </div>
+        <div class="row g-4 collection-grid">
+          <div class="col-6 col-lg-3"><a class="collection-card" href="#shop" data-filter="Necklaces">
+            <img src="https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=700&q=85" alt="Gold necklace collection" loading="lazy">
+            <span class="collection-label"><b>Necklaces</b><i class="bi bi-arrow-up-right"></i></span>
+          </a></div>
+          <div class="col-6 col-lg-3"><a class="collection-card" href="#shop" data-filter="Rings">
+            <img src="https://images.unsplash.com/photo-1605100804763-247f67b3557e?auto=format&fit=crop&w=700&q=85" alt="Elegant ring collection" loading="lazy">
+            <span class="collection-label"><b>Rings</b><i class="bi bi-arrow-up-right"></i></span>
+          </a></div>
+          <div class="col-6 col-lg-3"><a class="collection-card" href="#shop" data-filter="Earrings">
+            <img src="https://images.unsplash.com/photo-1535632066927-ab7c9ab60908?auto=format&fit=crop&w=700&q=85" alt="Statement earrings collection" loading="lazy">
+            <span class="collection-label"><b>Earrings</b><i class="bi bi-arrow-up-right"></i></span>
+          </a></div>
+          <div class="col-6 col-lg-3"><a class="collection-card" href="#shop" data-filter="Bridal">
+            <img src="https://images.unsplash.com/photo-1617038220319-276d3cfab638?auto=format&fit=crop&w=700&q=85" alt="Bridal jewellery collection" loading="lazy">
+            <span class="collection-label"><b>Bridal edit</b><i class="bi bi-arrow-up-right"></i></span>
+          </a></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad shop-section" id="shop">
+      <div class="container">
+        <div class="d-flex flex-wrap justify-content-between align-items-end gap-3 mb-4">
+          <div class="section-heading mb-0"><p class="eyebrow">THE MOST LOVED</p><h2>Our <em>favourites</em></h2></div>
+          <div class="shop-tools">
+            <label class="visually-hidden" for="productSearch">Search products</label>
+            <input id="productSearch" class="form-control search-input" type="search" placeholder="Search jewellery…">
+            <label class="visually-hidden" for="categoryFilter">Filter category</label>
+            <select id="categoryFilter" class="form-select category-select">
+              <option value="All">All pieces</option><option>Necklaces</option><option>Rings</option><option>Earrings</option><option>Bridal</option>
+            </select>
+          </div>
+        </div>
+        <div class="row g-4" id="productGrid" aria-live="polite"></div>
+        <p id="noResults" class="text-center py-5 d-none">No pieces found. Try another search.</p>
+      </div>
+    </section>
+
+    <section class="offer-banner">
+      <div class="container">
+        <div class="offer-content">
+          <p class="eyebrow text-gold">A GIFT FROM US TO YOU</p>
+          <h2>Celebrate the<br><em>little things.</em></h2>
+          <p>Find a meaningful piece for yourself or someone you love.</p>
+          <a href="#shop" class="btn btn-outline-gold">Explore the edit <i class="bi bi-arrow-up-right ms-2"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-pad" id="about">
+      <div class="container">
+        <div class="row align-items-center g-5">
+          <div class="col-lg-6"><div class="story-image"><img src="https://images.unsplash.com/photo-1611652022419-a9419f74343d?auto=format&fit=crop&w=1000&q=85" alt="Carefully styled jewellery pieces" loading="lazy"><span class="story-stamp">MADE TO<br>BE TREASURED</span></div></div>
+          <div class="col-lg-6 story-copy">
+            <p class="eyebrow">THE HEART OF NAAZ</p>
+            <h2>Beauty in every<br><em>detail.</em></h2>
+            <p>At Naaz Jewellery, we believe the right piece does more than complete an outfit — it becomes part of your story. Our curated collection celebrates graceful details, personal style and the moments worth remembering.</p>
+            <p>Explore pieces for everyday wear, thoughtful gifting and celebrations that stay with you.</p>
+            <a href="#collections" class="text-link">Discover our collections <i class="bi bi-arrow-right"></i></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="review-section section-pad">
+      <div class="container">
+        <div class="section-heading text-center"><p class="eyebrow">KIND WORDS</p><h2>Love, <em>in their words.</em></h2></div>
+        <div class="row g-4 mt-2">
+          <div class="col-md-4"><article class="review-card"><div class="stars">★★★★★</div><p>“The design is so elegant and delicate. It made a beautiful gift.”</p><h3>Amna K.</h3><small>Customer review example</small></article></div>
+          <div class="col-md-4"><article class="review-card"><div class="stars">★★★★★</div><p>“Loved the timeless look. It works beautifully with both casual and formal outfits.”</p><h3>Hira S.</h3><small>Customer review example</small></article></div>
+          <div class="col-md-4"><article class="review-card"><div class="stars">★★★★★</div><p>“A lovely collection with something special for every occasion.”</p><h3>Sana M.</h3><small>Customer review example</small></article></div>
+        </div>
+        <p class="small text-muted text-center mt-3">These are sample testimonials for layout preview.</p>
+      </div>
+    </section>
+
+    <section class="newsletter section-pad">
+      <div class="container text-center">
+        <p class="eyebrow">A LITTLE NOTE FROM NAAZ</p>
+        <h2>Good things, <em>delivered.</em></h2>
+        <p>Join our list for collection updates and styling inspiration.</p>
+        <form id="newsletterForm" class="newsletter-form mx-auto">
+          <label class="visually-hidden" for="newsletterEmail">Email address</label>
+          <input type="email" class="form-control" id="newsletterEmail" placeholder="Your email address" required>
+          <button class="btn btn-dark" type="submit">Sign me up <i class="bi bi-arrow-right ms-2"></i></button>
+        </form>
+        <div id="newsletterMessage" class="form-message" role="status"></div>
+      </div>
+    </section>
+
+    <section class="section-pad contact-section" id="contact">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-5">
+            <p class="eyebrow">WE'RE HERE FOR YOU</p><h2>Let's talk <em>jewellery.</em></h2>
+            <p class="muted-copy">Questions about a piece or need help choosing a gift? Send us a message.</p>
+            <div class="contact-detail"><i class="bi bi-envelope"></i><span><b>Email</b><br>hello@naazjewellery.example</span></div>
+            <div class="contact-detail"><i class="bi bi-clock"></i><span><b>Hours</b><br>Monday–Saturday · 10am–6pm</span></div>
+            <p class="small text-muted">Replace the demo contact details with your real business information before publishing.</p>
+          </div>
+          <div class="col-lg-7">
+            <form id="contactForm" class="contact-form">
+              <div class="row g-3">
+                <div class="col-md-6"><label for="contactName" class="form-label">Your name</label><input id="contactName" class="form-control" type="text" required></div>
+                <div class="col-md-6"><label for="contactEmail" class="form-label">Email address</label><input id="contactEmail" class="form-control" type="email" required></div>
+                <div class="col-12"><label for="contactSubject" class="form-label">Subject</label><input id="contactSubject" class="form-control" type="text" required></div>
+                <div class="col-12"><label for="contactMessage" class="form-label">Message</label><textarea id="contactMessage" class="form-control" rows="4" required></textarea></div>
+                <div class="col-12"><button class="btn btn-gold" type="submit">Send message <i class="bi bi-arrow-right ms-2"></i></button></div>
+              </div>
+              <div id="contactStatus" class="form-message" role="status"></div>
+              <p class="small text-muted mt-2 mb-0">Demo form only: messages are not sent to a server.</p>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="row g-4 align-items-start">
+        <div class="col-lg-5"><a class="navbar-brand footer-brand" href="#home"><span class="brand-mark">N</span><span>Naaz <small>JEWELLERY</small></span></a><p class="footer-copy">Timeless details. Personal meaning. Jewellery for the moments that make you, you.</p></div>
+        <div class="col-6 col-lg-2"><h3>Explore</h3><a href="#collections">Collections</a><a href="#shop">Shop all</a><a href="#about">Our story</a></div>
+        <div class="col-6 col-lg-2"><h3>Help</h3><a href="#contact">Contact us</a><a href="#contact">Care guide</a><a href="#contact">FAQs</a></div>
+        <div class="col-lg-3"><h3>Follow the sparkle</h3><div class="social-links"><a href="#contact" aria-label="Instagram"><i class="bi bi-instagram"></i></a><a href="#contact" aria-label="Facebook"><i class="bi bi-facebook"></i></a><a href="#contact" aria-label="Pinterest"><i class="bi bi-pinterest"></i></a></div></div>
+      </div>
+      <div class="footer-bottom"><span>© <span id="year"></span> Naaz Jewellery. All rights reserved.</span><span>Designed with a little sparkle ✦</span></div>
+    </div>
+  </footer>
+
+  <div class="toast-container position-fixed bottom-0 end-0 p-3">
+    <div id="siteToast" class="toast" role="status" aria-live="polite" aria-atomic="true"><div class="toast-body d-flex justify-content-between align-items-center"><span id="toastText">Added to bag</span><button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button></div></div>
+  </div>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
